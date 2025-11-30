@@ -83,7 +83,7 @@ def main():
     # Se puede activar con Right Shift O con el botón del knob (single click)
     horizontal_mode = [False]
     
-    # Listener de teclado para detectar Right Shift (opcional)
+    # Listener de teclado para detectar Right Shift
     def on_press(key):
         try:
             # Right Shift - método principal
@@ -127,8 +127,8 @@ def main():
     last_move_event_time = 0
     move_timeout = 0.2  # 200ms sin eventos = soltar el botón (aumentado)
     
-    # Sensibilidad del movimiento (ajusta este valor para cambiar la velocidad)
-    move_sensitivity = 2  # píxeles por evento de knob
+    # Sensibilidad del movimiento (velocidad normal aumentada 20%)
+    move_sensitivity = 5  # píxeles por evento de knob (4 * 1.2 = 4.8, redondeado a 5)
     
     try:
         while True:
