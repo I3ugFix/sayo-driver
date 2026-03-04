@@ -80,14 +80,17 @@ That's it! Installation complete.
 
 #### Step 1: Start the Script
 
+**Double-click** **`run_drag.command`** (in the project folder). Terminal will open and run the driver. Press Enter to close when done.
+
+Or from Terminal:
 ```bash
-./run_drag.sh
+./run_drag.command
 ```
 
-Or if that doesn't work:
+Or:
 ```bash
 source venv/bin/activate
-python3 knob_drag.sh
+python3 knob_drag.py
 ```
 
 #### Step 2: Grant System Permissions ⚠️ REQUIRED
@@ -143,7 +146,7 @@ When you run the script, macOS may prompt you for permissions to control your mo
 To keep it running without keeping Terminal open:
 
 ```bash
-nohup ./run_drag.sh > /dev/null 2>&1 &
+nohup ./run_drag.command > /dev/null 2>&1 &
 ```
 
 To stop it later:
@@ -247,11 +250,14 @@ pip install -r requirements.txt
 
 #### Paso 1: Iniciar el Script
 
+**Doble clic** en **`run_drag.command`** (en la carpeta del proyecto). Se abrirá Terminal y se ejecutará el driver. Pulsa Enter para cerrar cuando termines.
+
+O desde Terminal:
 ```bash
-./run_drag.sh
+./run_drag.command
 ```
 
-O si eso no funciona:
+O:
 ```bash
 source venv/bin/activate
 python3 knob_drag.py
@@ -310,7 +316,7 @@ Cuando ejecutes el script, macOS puede pedirte permisos para controlar el ratón
 Para dejarlo corriendo sin tener Terminal abierto:
 
 ```bash
-nohup ./run_drag.sh > /dev/null 2>&1 &
+nohup ./run_drag.command > /dev/null 2>&1 &
 ```
 
 Para detenerlo después:
